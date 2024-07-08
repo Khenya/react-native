@@ -32,6 +32,15 @@
 - `const` es una constante.
 - BigInt y Number no se pueden operar directamente.
 
+## Objetos: Puedes utilizar console.table para mostrar objetos de manera más clara.
+`const ESTUDIANTE = { nombre: 'Juan', edad: 20 };
+
+console.table(ESTUDIANTE);`
+
+Cuando llamas a un atributo que no está en el objeto, JavaScript lo agrega.
+Para pasar todos los elementos a un nuevo elemento, se usan los ....
+`const nuevoObjeto = { ...auto, ...conductor, licencia: "123" };`
+
 ## Listas y Objetos
 - Para manejar listas se utiliza `map` para iterar y generar elementos.
   ```jsx
