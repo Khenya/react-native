@@ -1,46 +1,41 @@
-##javaScipt
-***let*** -> variable
-***const*** -> constante
-***var*** ya no se usa 
+# Curso de Certificación en React Native
 
-***listas***
+## Día 1: Componentes Básicos y JSX
 
-##### objeto
-***table***
-te muestras mas bonito los objetos, en una tablita bonis 
-'''console.table(ESTUDIANTE)'''
+### Objetivos del Día
+- Aprender a utilizar JSX para estructurar componentes.
+- Practicar la creación y renderización de componentes.
+- Comprender la diferencia entre componentes stateless y stateful.
 
-cuando llamas a un atributo que no esta en el objetos javaScript lo agrega
+### Fundamentos de React Native
 
-caundo queremos pasar todos los elementos a un nuevo elemento usamos los ...
-'''const nuevoObjeto = {
-    ...auto,
-    ...conductor,
-    licencia: "123" // sirve para editar un atributo del objeto conductos
-}'''
+#### Introducción a React Native
+- **React Native** es un framework desarrollado por Facebook para construir aplicaciones móviles utilizando JavaScript y React.
+- Permite crear aplicaciones nativas para iOS y Android usando una base de código compartida.
+- Utiliza componentes nativos en lugar de web views, lo que resulta en un rendimiento superior y una experiencia más cercana a la de una aplicación nativa.
 
-react.js vs react native
-react js: librería web. Componentes. etiquetas html
-react native: libreia, donde hay componentes nativos. lo que hace es volverlo nativo
-donm: es un arbolito donde si modificas algo, modificas todo el arbol
-virtual dom: es igual en arbol donde si modificas ago, solo modifica a sus hijos. y no modifica toda la pantalla, solo modifica el DOM caundo termine el proceso
-para react native existen dos herramientas:
-expo: prototipo. 
-create cli react native: proyecto grande. 
-componente: función 
-state less = no tiene estado 
-stage full = tiene estado
-solo te devuelve una  etiqueta
-una propiedad es algo que no cambia = constante
-un stage cambia = variable
-stado es ago que cambia, un imput o bottom actualizan y cmabian 
-hook so ganchos, 
-un hook puede engancharse en esas 3 faces del componente
-	vida de componentes: antes de crearce, después de crearse y cuando se muere
-todo lo que inicie con use es un hook
+### Componentes Básicos y JSX
+- **Componentes** son las piezas fundamentales de una aplicación en React Native. Pueden ser **funcionales** (stateless) o **de clase** (stateful).
+- **JSX** (JavaScript XML) es una extensión de JavaScript que permite escribir código similar a HTML dentro de JavaScript.
+- Componentes básicos en React Native incluyen:
+  - `<View>`: Contenedor para otros componentes.
+  - `<Text>`: Para mostrar texto.
+  - `<Image>`: Para mostrar imágenes.
+  - `<ScrollView>`: Para vistas desplazables.
+  - `<TextInput>`: Para campos de entrada de texto.
 
-export default cuando solo exportamos una cosa
+### Estructura de un Componente
 
-let es variable -> ya no existe var
-cost es constante 
-big init y number no se pueden operar 
+Un componente en React o React Native se puede definir utilizando una función o una clase, pero nos estaremos centrando en los componentes funcionales con JSX.
+
+#### Ejemplo en React
+```jsx
+import React from 'react';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Hello, UPB!</h1>
+    </div>
+  );
+};
