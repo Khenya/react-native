@@ -23,12 +23,6 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-  },
-  profileImage:{
-  width: 30,
-  height: 30,
-  borderRadius: 15,
-  marginRight: 5
   }
 
 });

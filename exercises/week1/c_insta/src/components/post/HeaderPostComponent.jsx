@@ -13,26 +13,20 @@ const HeaderPostComponent = ({ user})=>{
       </View>
     )
 }
-const styles=StyleSheet.create({
+const styles =StyleSheet.create({
     profileImage:{
         width: 30,
         height: 30,
         borderRadius: 15,
         marginRight: 5
-      },
-      header:{
+    },
+    header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
         padding:10
-      },
-      text: {
-    color: "white",
-  },
-  profileImage:{
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    marginRight: 5
-  }
+    },
+    text: {
+        color: "white",
+    },
 })
 export default HeaderPostComponent;
