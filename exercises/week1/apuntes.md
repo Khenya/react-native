@@ -11,12 +11,51 @@
 
 ## Componentes
 - Un **componente** es una función.
-- **Stateless** (sin estado): No tiene estado.
-- **Stateful** (con estado): Tiene estado.
 - Solo devuelven una etiqueta.
 - Una **propiedad** es algo que no cambia, es constante.
 - Un **state** cambia, es una variable. Un **estado** es algo que cambia, un input o un botón actualizan y cambian el estado.
+### Componente Stateless (Sin Estado)
+  Los componentes stateless no tienen su propio estado interno. Solo reciben datos a través de props y los renderizan. Son puramente de presentación y dependen completamente de las props.
 
+  Ejemplo:
+  
+  ```jsx
+import React from 'react';
+import { View, Text } from 'react-native';
+
+const TextComponent = ({ message }) => {
+  return (
+    <View>
+      <Text>{message}</Text>
+    </View>
+  );
+};
+
+export default TextComponent;
+
+  ```
+  ### Componente Stateful (Con Estado)  
+  Los componentes stateful tienen su propio estado interno, lo que les permite tener una lógica más compleja y responder a las interacciones del usuario.
+
+Ejemplo:
+
+  ```jsx
+import React, { useState } from 'react';
+import { View, Text, Button } from 'react-native';
+
+const ContadorComponent = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <View>
+      <Text>Count: {count}</Text>
+      <Button title="Increment" onPress={() => setCount(count + 1)} />
+    </View>
+  );
+};
+
+export default ContadorComponent;
+  ```
 ## Hooks
 - **Hooks** son ganchos que se enganchan en las tres fases de la vida de un componente:
   - Antes de crearse.
