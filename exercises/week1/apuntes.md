@@ -76,13 +76,23 @@ export default ContadorComponent;
 const ESTUDIANTE = { nombre: 'Juan', edad: 20 };
 console.table(ESTUDIANTE);
   ```
+
 Cuando llamas a un atributo que no está en el objeto, JavaScript lo agrega.
 Para pasar todos los elementos a un nuevo elemento, se usan los ....
+
   ```jsx
-  const nuevoObjeto = { ...auto, ...conductor, licencia: "123" };`
+  const nuevoObjeto = { ...auto, ...conductor, licencia: "123" };
   ```
 ## Listas y Objetos
 - Para manejar listas se utiliza `map` para iterar y generar elementos.
   ```jsx
   const items = ['item1', 'item2', 'item3'];
   const listItems = items.map(item => <Text key={item}>{item}</Text>);
+
+## Hoocks
+### Memo
+nos ayuda a no hacer un doble renderizado 
+los ```prevProps``` no se renderizan si es true si el false si se van a renderizar
+
+### UseMemo
+nos ayuda en los cambios de los props
