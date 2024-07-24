@@ -1,5 +1,16 @@
 {
   "dependencies": {
+    "firebase-admin": "^12.2.0",
     "react-native-vector-icons": "^10.1.0"
-  }
+  },
+  "name": "week1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
